@@ -13,7 +13,12 @@
   --border-color: #eee;
   --pf-bg: #fff;
   --hd-border: #ececec;
+  --grid-gap: 50px;
+  --cards: 3;
 }
+
+
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -24,6 +29,16 @@
 body {
   font-family: Roboto;
 }
+
+.grid-list{
+  display: flex;
+  justify-content: center;
+  gap: var(--grid-gap);
+}
+.grid-item{
+  width: calc((100% - var(--grid-gap)*var(--cards))/var(--cards));
+}
+
 .header {
   padding-top: 23px;
   padding-bottom: 24px;
@@ -87,9 +102,11 @@ body {
   letter-spacing: 2.64px;
 }
 .hero {
-  background-image: url(../image/heroimg.png);
+  background-image: url(../image/herobrin.png);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-button {
   color: var(--wathbt);
@@ -114,6 +131,28 @@ body {
   display: flex;
   gap: 30px;
 }
+
+
+.features-item:nth-child(1)::before {
+  content: url('../image/antena.jpg');
+  display: block;
+  }
+
+.features-item:nth-child(2)::before {
+  content: url('../image/chasy.jpg');
+  display: block;
+  }
+
+.features-item:nth-child(3)::before {
+  content: url('../image/nout.jpg');
+  display: block;
+  }
+
+.features-item:nth-child(4)::before {
+  content: url('../image/cosmonavt.jpg');
+  display: block;
+  }
+
 .features-title {
   color: var(--comandname);
   margin-bottom: 10px;
@@ -233,9 +272,10 @@ gap: 30px;
   padding-bottom: 94px;
 }
 .sponcer-list {
+  --grid-gap: 30px;
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  
 }
 .sponcer-item {
   background-color: var(--pf-bg);
@@ -243,7 +283,12 @@ gap: 30px;
   margin-bottom: 30px;
   width: 370px;
   height: 404px;
+  --cards: 9;
 }
+.spocer-item:hover{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .sponcer-photo {
   margin-bottom: 20px;
 }
