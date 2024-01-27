@@ -16,29 +16,23 @@
   --grid-gap: 50px;
   --cards: 3;
 }
-
-
-
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /* outline: blueviolet solid; */
   outline: transparent solid;
 }
-body {
-  font-family: Roboto;
-}
-
-.grid-list{
+.grid-list {
   display: flex;
   justify-content: center;
   gap: var(--grid-gap);
 }
-.grid-item{
-  width: calc((100% - var(--grid-gap)*var(--cards))/var(--cards));
+.grid-item {
+  width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
 }
-
+body {
+  font-family: Roboto;
+}
 .header {
   padding-top: 23px;
   padding-bottom: 24px;
@@ -56,10 +50,10 @@ body {
   font-weight: 700;
   letter-spacing: 0.78px;
 }
-.color {
+.logocolor {
   color: var(--studio);
 }
-.header-place {
+.header-navagation {
   margin-right: 344px;
 }
 .header-list {
@@ -92,7 +86,7 @@ body {
   color: var(--wathbt);
   margin-left: auto;
   margin-right: auto;
-  width: 696px;             
+  width: 696px;
   text-align: center;
   margin-bottom: 30px;
   font-size: 44px;
@@ -102,11 +96,11 @@ body {
   letter-spacing: 2.64px;
 }
 .hero {
-  background-image: url(../image/herobrin.png);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-image: url(../image/heroimg.webp);
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-button {
   color: var(--wathbt);
@@ -122,6 +116,7 @@ body {
   letter-spacing: 0.96px;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .features {
   padding-top: 94px;
@@ -131,31 +126,26 @@ body {
   display: flex;
   gap: 30px;
 }
-
-
 .features-item:nth-child(1)::before {
-  content: url('../image/antena.jpg');
+  content: url("../image/group1.webp");
   display: block;
-  }
-
+}
 .features-item:nth-child(2)::before {
-  content: url('../image/chasy.jpg');
+  content: url("../image/group2.webp");
   display: block;
-  }
-
+}
 .features-item:nth-child(3)::before {
-  content: url('../image/nout.jpg');
+  content: url("../image/group3.webp");
   display: block;
-  }
-
+}
 .features-item:nth-child(4)::before {
-  content: url('../image/cosmonavt.jpg');
+  content: url("../image/group4.webp");
   display: block;
-  }
-
+}
 .features-title {
   color: var(--comandname);
   margin-bottom: 10px;
+  margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -189,7 +179,7 @@ body {
 }
 .comunity-list {
   display: flex;
-gap: 30px;
+  gap: 30px;
 }
 .comunity-name {
   color: var(--comandname);
@@ -204,6 +194,9 @@ gap: 30px;
   width: 270px;
   height: 368px;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .comunity-img {
   width: 270px;
@@ -263,19 +256,20 @@ gap: 30px;
   letter-spacing: 0.48px;
   border-radius: 4px;
   border: none;
+  padding: 6px 25px;
 }
 .pages-button:hover {
   background-color: var(--wathbtbg);
   color: var(--comandbg);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .sponcer {
   padding-bottom: 94px;
 }
 .sponcer-list {
   --grid-gap: 30px;
-  display: flex;
   flex-wrap: wrap;
-  
 }
 .sponcer-item {
   background-color: var(--pf-bg);
@@ -285,12 +279,13 @@ gap: 30px;
   height: 404px;
   --cards: 9;
 }
-.spocer-item:hover{
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+.sponcer-item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
 .sponcer-photo {
   margin-bottom: 20px;
+  align-items: center;
 }
 .sponcer-name {
   color: var(--comandname);
@@ -300,7 +295,7 @@ gap: 30px;
   line-height: 2;
   letter-spacing: 1.08px;
 }
-.sponcer-description {
+.proвuct-description {
   color: var(--comandtext);
   padding-left: 24px;
   font-size: 16px;
@@ -319,9 +314,9 @@ gap: 30px;
 .work {
   background-color: var(--wathbt);
 }
-.command {
+.comunity {
   background-color: var(--portfoliobutton);
 }
-.lgfooter {
+.logofooter {
   color: var(--wathbt);
 }
