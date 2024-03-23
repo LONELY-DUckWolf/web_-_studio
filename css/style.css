@@ -195,7 +195,7 @@ body {
 .comunity-item {
   background-color: var(--wathbt);
   width: 270px;
-  height: 368px;
+  height: 428px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -322,4 +322,51 @@ body {
 }
 .logofooter {
   color: var(--wathbt);
+}
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: var(--wathbt);
+}
+.client-title {
+  color: var(--comandname);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+.client-item {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.сlient-img {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.clietn-img:hover {
+  fill: #2196f3;
+}
+
+.client-sc {
+  width: 30px;
+  height: 30px;
+  margin-top: 16px;
+  margin-right: 12px;
+}
+
+.client-logo {
+  width: 206px;
+  height: 160px;
 }
