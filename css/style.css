@@ -600,6 +600,56 @@ height: 20px;
   padding-bottom: 94px;
   background: var(--wathbt);
 }
+
+.workers {
+  font-weight: 700;
+  line-height: 0.6;
+  padding: 94px 0 94px;
+}
+
+.workers-title {
+  color: var(--pf-bg);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  line-height: 1.33;
+ margin-bottom: 50px;
+}
+
+.workers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workers-item {
+  position:relative;
+}
+
+
+.workers-position {
+display: flex;
+position: absolute;
+z-index: 2;
+justify-content: center;
+align-items: center;
+width: 370px;
+height: 70px;
+bottom: 0;
+background: rgba(47, 48, 58, 0.8);
+left: 0;
+
+}
+
+
+.workers-text {
+  color: var(--pf-bg);
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
 .client-title {
   color: var(--comandname);
   text-align: center;
