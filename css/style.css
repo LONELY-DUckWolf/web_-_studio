@@ -35,50 +35,16 @@
 body {
   font-family: Roboto;
 }
-.header {
-  padding-top: 23px;
-  padding-bottom: 24px;
-  border: 1px solid var(--hd-border);
-}
+.color:hover {
+  color: var(--wathbtbg);
 
-.header-link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 50px;
-  width: 100%;
-  height: 4px;
-  opacity: 0;
-  margin-top: 28px;
-  justify-content: center;
-  background-color: var(--wathbtbg);
-}
-
-.header-link {
-  position: relative;
-  left: 0;
-  transition: 0.3s;
-  
 
 }
 
-.header-item:hover>.header-link::after {
-  opacity: 1;
-  
+.color {
+  color: #000;
 }
 
-.header-contacts-list-item .header-contacts-link {
-  color: var(--text-color, #757575);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
-
-.header-contacts-link::after {
-  
-}
 
 .box {
   display: flex;
@@ -95,52 +61,23 @@ body {
 .logocolor {
   color: var(--studio);
 }
-.header-navagation {
-  margin-right: 344px;
-}
-.header-list {
+
+
+.container-header {
   display: flex;
-  gap: 50px;
-}
-.color:hover {
-  color: var(--wathbtbg);
-
-
+  align-items: center;
 }
 
-.color {
-  color: #000;
-}
 
-.header-link {
-  color: var(--comandname);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
-.header-contacts {
-  display: flex;
-  gap: 50px;
-}
-
-.header-logo {
-  fill: var(--hedermail);
-
-}
-
-.header-link:hover > .header-logo {
-  fill:var(--whathbtbg);
-}
-
-.header-contacts-icon{
-  fill: var(--comandname);
+header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--header-color, #ececec);
 }
 
 .header-list {
   display: flex;
   align-items: center;
 }
-
 
 .header-contact-list{
   display: flex;
@@ -155,8 +92,21 @@ body {
   margin-left: 93px;
 }
 
-.header-contacts-list-item,
-.header-contacts-link {
+.header-contacts-link:hover > .header-contacts-icon {
+  fill: var(--wathbtbg);
+}
+
+.header-contacts-icon{
+  fill: var(--commandtext);
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+.header-contacts-list-item .header-contacts-link {
   color: var(--text-color, #757575);
   font-size: 14px;
   font-weight: 500;
@@ -171,17 +121,52 @@ body {
   line-height: 1.15;
 }
 
+
+
+
 .header-link {
-  color: var(--feauturesmain);
+  color: var(--comandname);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.28px;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.header-link-line{
+  color: var(--wathbtbg);
+}
+
+
+.header-link-line::after{
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  margin-top: 28px;
+  justify-content: center;
+  background-color: var(--wathbtbg);
+}
+
+.header-list-item:hover>.header-link-line::after {
+  opacity: 1;
+  
+}
+
 .header-link:hover {
-  color: var(--whathbtbg);
+  color: var(--wathbtbg);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--wathbtbg);
 }
 
 .header-contacts-link{
@@ -189,6 +174,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .headers-link { 
@@ -201,19 +189,27 @@ body {
 
 
 
-.header-list .header-link {
-  color: var(--text-color, #757575);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+ul {
+  list-style-type: none;
 }
 
-.header-list-item {
-  display: flex;
-  gap: 53px;
-  margin-left: 93px;
-  line-height: 1.15;
+
+
+.first-color-webstudio {
+  color: var(--wathbtbg);
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.78px;
+}
+
+
+.second-color-webstudio {
+  color: var(--feauturesmain);
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.78px;
 }
 
 .contact-link {
@@ -314,20 +310,27 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
+
+
+
 .work {
-  padding-bottom: 94px;
+  font-weight: 700;
+  line-height: 0.6;
+  padding: 94px 0 94px;
 }
 .work-list {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 .work-title {
-  color: var(--comandname);
+  color: var(--feauturesmain);
   text-align: center;
-  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  line-height: 1.33;
+ margin-bottom: 50px;
 }
 .comunity {
   padding-top: 94px;
@@ -514,6 +517,7 @@ body {
   border-radius: 4px;
   border: none;
   padding: 6px 25px;
+
 }
 
 .command-title {
@@ -571,6 +575,10 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 .command-icons-list-item {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .command-icons-link{
@@ -586,6 +594,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
   fill: var(--logo-svg);
   width: 20px;
 height: 20px;
+transition-duration: 250ms;
+transition-property: color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .command-icons-list-item:hover{
@@ -653,6 +664,9 @@ height: 20px;
     padding: 16px 32px;
     border-radius: 4px;
   border: 1px solid #AFB1B8;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   
@@ -660,13 +674,22 @@ height: 20px;
   fill: var(--logo-svg);
   width: 106px;
   height: 60px;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .customers-list-item:hover > .costumers-icons {
     fill: var(--wathbtbg);
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .customers-list-item:hover {
     border: 1px solid var(--wathbtbg);
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .section-button {
@@ -698,14 +721,14 @@ height: 20px;
   background: var(--wathbt);
 }
 
-.workers {
+.workerss {
   font-weight: 700;
   line-height: 0.6;
   padding: 94px 0 94px;
 }
 
-.workers-title {
-  color: var(--pf-bg);
+.workerss-title {
+  color: var(--feauturesmain);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -714,20 +737,20 @@ height: 20px;
  margin-bottom: 50px;
 }
 
-.workers-list {
+.workerss-list {
   display: flex;
   justify-content: space-between;
 }
 
-.workers-item {
+.workerss-item {
   position:relative;
 }
 
 
-.workers-position {
+.workerss-position {
 display: flex;
 position: absolute;
-z-index: 2;
+z-index: 1;
 justify-content: center;
 align-items: center;
 width: 370px;
@@ -735,17 +758,53 @@ height: 70px;
 bottom: 0;
 background: rgba(47, 48, 58, 0.8);
 left: 0;
-
+transition-duration: 250ms;
+transition-property: transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transform: translateY(+101%);
 }
 
 
-.workers-text {
+.workerss-text {
   color: var(--pf-bg);
 font-size: 14px;
 font-weight: 700;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
+
+.workerss-link{
+  overflow: hidden;
+  height: 294px;
+  position: relative;
+  display: block;
+}
+
+.workerss-link:hover .workerss-position {
+  transform: translate(0%);
+}
+
+.workerss-link:focus .workerss-position {
+  transform: translate(0%);
+}
+
+
+.command {
+  font-weight: 700;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #F5F4FA
+}
+
+.command-title {
+  color: var(--feauturesmain);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
 
 .client-title {
   color: var(--comandname);
@@ -839,6 +898,7 @@ height: 20px;
 
 .footer-icons-list-item:hover{
   background-color: var(--wathbtbg);
+  
 }
 
 
@@ -912,6 +972,9 @@ margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-button:hover,
