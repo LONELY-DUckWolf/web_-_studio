@@ -3,15 +3,15 @@
 .pages {
     padding-top: 94px;
     padding-bottom: 50px;
-  }
-  .pages-list {
+  
+  &__list {
     display: flex;
     justify-content: center;
     gap: 8px;
   }
-  .pages-button {
-    color: var(--comandname);
-    background-color: var(--portfoliobutton);
+  &__button {
+    color: $text-color;
+    background-color: $icon-color;
     display: block;
     height: 38px;
     font-size: 16px;
@@ -25,14 +25,15 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.41,.33,.46,.93);
     
+
+    &:hover {
+      background-color: $logo-colour;
+      color: $bg-color;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
   }
 
-  
-.pages-button:hover {
-    background-color: var(--wathbtbg);
-    color: var(--comandbg);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  }
-  
 
+  
+}

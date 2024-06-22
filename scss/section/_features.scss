@@ -1,29 +1,30 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .features-list {
+     background-color: var(--wathbt);
+
+  &__list {
     display: flex;
     gap: 30px;
   }
-  .features-item:nth-child(1)::before {
+  &__item:nth-child(1)::before {
     content: url("../image/group1.webp");
     display: block;
   }
-  .features-item:nth-child(2)::before {
+  &__item:nth-child(2)::before {
     content: url("../image/group2.webp");
     display: block;
   }
-  .features-item:nth-child(3)::before {
+  &__item:nth-child(3)::before {
     content: url("../image/group3.webp");
     display: block;
   }
-  .features-item:nth-child(4)::before {
+  &__item:nth-child(4)::before {
     content: url("../image/group4.webp");
     display: block;
   }
-  .features-title {
-    color: var(--comandname);
+  &__title {
+    color: $text-color;
     margin-bottom: 10px;
     margin-top: 30px;
     font-size: 14px;
@@ -31,8 +32,8 @@
     text-transform: uppercase;
     letter-spacing: 0.42px;
   }
-  .features-text {
-    color: var(--comandtext);
+  &__text {
+    color: $text-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -40,6 +41,4 @@
   }
   
   
-  .features {
-    background-color: var(--wathbt);
-  }
+}

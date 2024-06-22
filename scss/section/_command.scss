@@ -1,5 +1,17 @@
-.command-title {
-    color: var(--feauturesmain);
+
+  .command {
+    font-weight: 700;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+
+
+
+
+
+
+&__title {
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -7,52 +19,38 @@
     margin-bottom: 50px;
   }
   
-  .command-list {
+  &__list {
     font-weight: 500;
     display: flex;
     gap: 30px;
   
   }
   
-  .command-item {
-    background-color: var(--pf-bg);
-  padding-bottom: 30px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  &__item {
+    height: 550px;
+    background-color: $bg-color;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &__items {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
   }
   
-  .team-photo{
+  &__photo{
     margin-bottom: 33px;
   }
   
-  .command-icons{
-    fill: var(--logo-svg);
-  }
-  
-  .command {
-    font-weight: 700;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #F5F4FA
-  }
-  
-  .command-icons-list{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  &__icons{
+    fill: $icon-color;
   }
   
   
-  
-  .command-icons-list {
+  &__liist {
     display: flex;
-    gap: 10px;
-    
-  }
-  
-  
-  .command-icons-list-item {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition-property: background-color;
@@ -60,45 +58,43 @@
     transition-timing-function: cubic-bezier(.41,.33,.46,.93);
   }
   
-  .command-icons-link{
-    display: flex;
+  &__link{
+    display: flex;  
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    border: 1px solid $bg-color;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+
+    &:hover {
+      background-color: $logo-colour;
+    }
   }
   
   
-  .command-icons {
-    fill: var(--logo-svg);
-    width: 20px;
+  &__icons {
+
+  fill: $icon-color;
+  width: 20px;
   height: 20px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+
+  &:hover{
+    fill: $bg-color;
+
   }
   
-  .command-icons-list-item:hover{
-    background-color: var(--wathbtbg);
   }
   
-  .command-icons:hover{
-    fill: var(--pf-bg);
-  }
+
+  
 
 
-  .command {
-    font-weight: 700;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #F5F4FA
-  }
   
-  .command-title {
-    color: var(--feauturesmain);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
   }

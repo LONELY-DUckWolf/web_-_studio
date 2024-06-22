@@ -7,6 +7,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .work {
+    background-color: var(--wathbt);
+  }
+
   .work-title {
     color: var(--feauturesmain);
     text-align: center;
@@ -21,9 +26,9 @@
     font-weight: 700;
     line-height: 0.6;
     padding: 94px 0 94px;
-  }
   
-  .workerss-title {
+  
+  &__title {
     color: var(--feauturesmain);
     text-align: center;
     font-size: 36px;
@@ -33,17 +38,17 @@
    margin-bottom: 50px;
   }
   
-  .workerss-list {
+  &__list {
     display: flex;
     justify-content: space-between;
   }
   
-  .workerss-item {
+  &__item {
     position:relative;
   }
   
   
-  .workerss-position {
+  &__position {
   display: flex;
   position: absolute;
   z-index: 1;
@@ -61,28 +66,27 @@
   }
   
   
-  .workerss-text {
-    color: var(--pf-bg);
+  &__text {
+    color: $title-color;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   }
   
-  .workerss-link{
+  &__link{
     overflow: hidden;
     height: 294px;
     position: relative;
     display: block;
   }
   
-  .workerss-link:hover .workerss-position {
+  &__link:hover &__position {
     transform: translate(0%);
   }
   
-  .workerss-link:focus .workerss-position {
+  &__link:focus &__position {
     transform: translate(0%);
   }
-  .work {
-    background-color: var(--wathbt);
+
   }
