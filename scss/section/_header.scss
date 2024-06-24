@@ -95,8 +95,16 @@
   &__logo1 {
     color: $text-color;
   }
-&__navagation {
-    margin-right: 344px;
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      width: 517px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 933px;
+    }
   }
 &__list {
     display: flex;
@@ -114,7 +122,7 @@
     }
   }
 &__link {
-    color: var(--comandname);
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -127,7 +135,7 @@
     fill:var(--whathbtbg);
   }
 &__icon{
-    fill: var(--comandname);
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.41,.33,.46,.93);
@@ -135,22 +143,27 @@
 &__list {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 &__contacts{
     display: flex;
     gap: 50px;
     margin-left: auto;
+
     
   }
 &__contact{
     display: flex;
     gap: 50px;
     margin-left: 93px;
-  }
+}
 &__contacts,
 &__mail,
 &__phone {
-    color: var(--comandname);
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -159,16 +172,24 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+    }
+    gap: 10px;
+
 
     &:hover {
-      color: var(--wathbtbg);
+      color: $logo-colour;
     }
   }
-  
 
   
   &__icon:hover {
-    fill: var(--wathbtbg);
+    fill: $logo-colour;
   }
   
   &__list-item {
@@ -178,14 +199,14 @@
     line-height: 1.15;
   }
   &__link {
-    color: var(--feauturesmain);
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.15;
     letter-spacing: 0.28px;
 
     &:hover {
-      color: var(--whathbtbg);
+      color: $logo-colour;
     }
   }
 
@@ -197,7 +218,7 @@
     gap: 10px;
   }
   &__link { 
-    color: var(--commandtext);
+    color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 0.6;
@@ -216,6 +237,5 @@
     margin-left: 93px;
     line-height: 1.15;
   }
-
 
 }

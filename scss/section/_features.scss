@@ -1,44 +1,67 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-     background-color: var(--wathbt);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $bg-color;
 
   &__list {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
-  &__item:nth-child(1)::before {
-    content: url("../image/group1.webp");
+
+  &__box {
+    background: #F5F4FA;
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
-  &__item:nth-child(2)::before {
-    content: url("../image/group2.webp");
-    display: block;
-  }
-  &__item:nth-child(3)::before {
-    content: url("../image/group3.webp");
-    display: block;
-  }
-  &__item:nth-child(4)::before {
-    content: url("../image/group4.webp");
-    display: block;
-  }
+
   &__title {
     color: $text-color;
     margin-bottom: 10px;
     margin-top: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.42px;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
   }
+
   &__text {
     color: $text-color;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.42px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
-  
-  
 }

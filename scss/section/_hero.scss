@@ -9,18 +9,31 @@
   padding-bottom: 200px;
 
 
-&__title {
-    color: $title-color;
+  &__title {
+    color: $bg-color;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 44px;
-    font-weight: 900;
-    text-transform: uppercase;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
+
+    @media screen and (max-width: 1199px) {
+      width: 360px;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 161.538%;
+      letter-spacing: 1.56px;
+      text-transform: uppercase;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 136.364%;
+      letter-spacing: 2.64px;
+      text-transform: uppercase;
+    }
   }
 
   &__button {

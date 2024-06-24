@@ -1,59 +1,57 @@
-.customers{
-    
-    
-    
-    &__text{
-      color: $text-color;
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: $bg-color;
+
+  &__text {
+    color: $text-color;
     text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    padding-top: 94px;
+    font-family: Roboto;
+    @extend %name;
     margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
     }
-    
-    
-    &__list {
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+  &__item {
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid $icon-color;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding-bottom: 94px;
+    align-items: center;    
+
+    @media screen and (max-width: 767px) {
+      width: 210px;
     }
-    
-    
-    &__items {
-      display: flex;
-      justify-content: center;
-      padding: 16px 32px;
-      border-radius: 4px;
-      border: 1px solid $icon-color;
-      fill: $icon-color;
-      width: 255px;
-      height: 175px;
-
-  
-
-    &:hover {
-      border: 1px solid $logo-colour;
+    @media screen and (min-width: 768px) {
+      width: 226px;
     }
-
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
-    
-    
-  &__icons {
-    fill: $icon-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+  &__item:hover {
+    border: 1px solid $logo-colour;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:hover > &__logo {
+    fill: $logo-colour;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-    &:hover {
-      fill: $logo-colour;
-    }
-    }
-    
-
-   
-  
+  &__logo {
+    fill: $text-color;
+    width: 106px;
+    height: 60px;
+  }
 }
