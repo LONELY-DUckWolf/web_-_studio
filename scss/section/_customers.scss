@@ -13,6 +13,7 @@
   &__list {
     display: flex;
     gap: 30px;
+    justify-content: center;
 
     @media screen and (max-width: 1199px) {
       flex-wrap: wrap;
@@ -31,7 +32,7 @@
     align-items: center;    
 
     @media screen and (max-width: 767px) {
-      width: 210px;
+      max-width: 210px;
     }
     @media screen and (min-width: 768px) {
       width: 226px;

@@ -5,6 +5,7 @@
 
   &__list {
     display: flex;
+    justify-content: center;
     gap: 30px;
 
     @media screen and (max-width: 1199px) {
@@ -27,13 +28,13 @@
     border-radius: 4px;
 
     @media screen and (max-width: 767px) {
-      width: 450px;
+
     }
     @media screen and (min-width: 768px) {
-      width: 354px;
+      max-width: 354px;
     }
     @media screen and (min-width: 1200px) {
-      width: 270px;
+      max-width: 270px;
     }
   }
 

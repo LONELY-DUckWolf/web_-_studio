@@ -1,241 +1,324 @@
 .header {
-    padding-top: 23px;
-    padding-bottom: 24px;
-
-
+  padding-top: 23px;
+  padding-bottom: 24px;
 
   &__link {
-    position: relative;
-    left: 0;
-    transition: 0.3s;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
-  
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      border-radius: 50px;
-      width: 48px;
-      width: 100%;
-      height: 4px;
-      opacity: 0;
-      margin-top: 28px;
-      justify-content: center;
-      background-color: $bg-color;
-      transition-property: opacity;
+      position: relative;
+      left: 0;
+      transition: 0.3s;
+      transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(.41,.33,.46,.93);
-    }
     
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 50px;
+        width: 100%;
+        height: 4px;
+        opacity: 0;
+        margin-top: 28px;
+        justify-content: center;
+        background-color: $logo-colour;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+      }
   }
-  
-  &__item:hover > &__link::after {
-    opacity: 1;
-  
-  }
-  
-    &__info {
-    display: flex;
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
-    &:hover {
-      fill: $logo-colour;
-    }
+  &__item:hover > &__link::after {
+      opacity: 1;
   }
 
   &__info {
-    color: $text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+      display: flex;
+      color: $text-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
-    &:hover {
-      color: $logo-colour;
-    }
+      &:hover {
+          fill: $logo-colour;
+      }
+  }
+
+  &__info {
+      color: $text-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+
+      &:hover {
+          color: $logo-colour;
+      }
   }
 
   &__web {
-    color: $text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+      color: $text-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
-
-    &:hover {
-      color: $logo-colour;
-    }
+      &:hover {
+          color: $logo-colour;
+      }
   }
 
   &__logo {
-    margin-right: 50px;
+      margin-right: 50px;
   }
 
   &__box {
-    display: flex;
-    align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
+
   &__logo2 {
-    color: $logo-colour;
-    margin-right: 80px;
-    font-size: 26px;
-    font-family: Raleway;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-
+      color: $logo-colour;
+      margin-right: 80px;
+      font-size: 26px;
+      font-family: Raleway;
+      font-weight: 700;
+      letter-spacing: 0.78px;
   }
+
   &__logo1 {
-    color: $text-color;
+      color: $text-color;
+      margin-right: 80px;
+      font-size: 26px;
+      font-family: Raleway;
+      font-weight: 700;
+      letter-spacing: 0.78px;
   }
-  &__navigation {
-    display: flex;
-    justify-content: space-between;
 
-    @media screen and (min-width: 768px) {
-      width: 517px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 933px;
-    }
+  &__navigation {
+      display: flex;
+
+      @media screen and (min-width: 768px) {
+          width: 517px;
+      }
+      @media screen and (min-width: 1200px) {
+          width: 933px;
+      }
   }
-&__list {
-    display: flex;
-    gap: 50px;
+
+  &__list {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
   }
 
   &__web {
-    color: $text-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+      color: $text-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
-    &:hover {
-      color: $logo-colour;
-    }
-  }
-&__link {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+      &:hover {
+          color: $logo-colour;
+      }
   }
 
-&__logo {
-    fill: var(--hedermail);
-  }
-&__link:hover > &__logo {
-    fill:var(--whathbtbg);
-  }
-&__icon{
-    fill: $text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
-  }
-&__list {
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
-&__contacts{
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
-
-    
-  }
-&__contact{
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
-}
-&__contacts,
-&__mail,
-&__phone {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @media screen and (max-width: 1199px) {
-      flex-direction: column;
-    }
-    gap: 10px;
-
-
-    &:hover {
-      color: $logo-colour;
-    }
-  }
-
-  
-  &__icon:hover {
-    fill: $logo-colour;
-  }
-  
-  &__list-item {
-    display: flex;
-    gap: 53px;
-    margin-left: 93px;
-    line-height: 1.15;
-  }
   &__link {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.15;
-    letter-spacing: 0.28px;
+      color: $text-color;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+  }
 
-    &:hover {
-      color: $logo-colour;
-    }
+  &__icon {
+      fill: $text-color;
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+  }
+
+  &__list {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 767px) {
+          display: none;
+      }
+  }
+
+  &__contacts {
+      display: flex;
+      gap: 50px;
+      margin-left: auto;
+  }
+
+  &__contact {
+      display: flex;
+      gap: 50px;
+      margin-left: 93px;
+  }
+
+  &__contacts,
+  &__mail,
+  &__phone {
+      color: $text-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+
+      @media screen and (max-width: 767px) {
+          display: none;
+      }
+
+      @media screen and (max-width: 1199px) {
+          flex-direction: column;
+      }
+
+      gap: 10px;
+
+      &:hover {
+          color: $logo-colour;
+      }
+  }
+
+  &__icon:hover {
+      fill: $logo-colour;
+  }
+
+  &__item {
+      display: flex;
+      gap: 53px;
+      margin-left: 93px;
+      line-height: 1.15;
+  }
+
+  &__link {
+      color: $text-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: 0.28px;
+
+      &:hover {
+          color: $logo-colour;
+      }
   }
 
   &__mail,
-  &__phone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  &__link { 
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 0.6;
-    letter-spacing: 0.28px;
-  }
-  &__list &__link {
-    color: var(--text-color, #757575);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-  }
-  &__contact {
-    display: flex;
-    gap: 53px;
-    margin-left: 93px;
-    line-height: 1.15;
+  &__phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-right: 425px;
   }
 
+  &__link {
+      color: $text-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 0.6;
+      letter-spacing: 0.28px;
+  }
+
+  &__list &__link {
+      color: var(--text-color, #757575);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+  }
+
+  &__contact {
+      display: flex;
+      gap: 53px;
+      margin-left: 93px;
+      line-height: 1.15;
+  }
+}
+
+.headermobile {
+  &__hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+
+      span {
+          background: $text-color;
+          border-radius: 2px;
+          display: block;
+          height: 3px;
+          margin: 5px 0;
+          width: 25px;
+      }
+
+      @media screen and (max-width: 767px) {
+          display: flex;
+      }
+  }
+
+  &__list, &__contacts {
+      @media screen and (max-width: 767px) {
+          display: none;
+      }
+  }
+
+  &__menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background: $bg-color;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      z-index: 1000;
+
+      &.is-hidden {
+          display: none;
+      }
+  }
+
+  &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  &__item {
+      margin: 10px 0;
+  }
+
+  &__link {
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      
+      &:hover {
+          color: $logo-colour;
+      }
+  }
+
+  &__close {
+      background: none;
+      border: none;
+      color: $text-color;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      
+      &:hover {
+          color: $logo-colour;
+      }
+  }
 }
