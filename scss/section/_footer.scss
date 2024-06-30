@@ -55,7 +55,7 @@
     }
   }
   &__liink {
-    color: $bg-color;
+    color: $paragraphs-color;
     margin-top: 9px;
     @extend %text;
     line-height: 1.71;
@@ -115,8 +115,9 @@
   }
   &__list {
     display: flex;
+    // align-items: center;
+    // justify-content: center;
     gap: 10px;
-    width: 206px;
 
     @media screen and (max-width: 1199px) {
       margin-left: auto;

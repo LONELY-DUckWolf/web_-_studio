@@ -14,6 +14,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 button {
@@ -149,7 +151,6 @@ button {
 }
 .header__logo2 {
   color: #2196f3;
-  margin-right: 80px;
   font-size: 26px;
   font-family: Raleway;
   font-weight: 700;
@@ -250,8 +251,7 @@ button {
 }
 .header__item {
   display: flex;
-  gap: 53px;
-  margin-left: 93px;
+  gap: 51px;
   line-height: 1.15;
 }
 .header__link {
@@ -368,8 +368,14 @@ button {
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: #ffffff;
@@ -476,11 +482,6 @@ button {
 .features__text {
   color: #212121;
   line-height: 1.71;
-}
-@media screen and (max-width: 767px) {
-  .features__text {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 768px) {
   .features__text {
@@ -627,7 +628,19 @@ button {
 .command {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #ffffff;
+  background-color: rgb(245, 244, 250);
+}
+@media screen and (max-width: 1199px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .command__list {
   display: flex;
@@ -649,8 +662,19 @@ button {
   text-align: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .command__name {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .command__name {
+    font-size: 36px;
+  }
+}
 .command__item {
   background-color: #ffffff;
+  padding-bottom: 24px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -673,8 +697,6 @@ button {
   }
 }
 .command__img {
-  width: 270px;
-  height: 260px;
   margin-bottom: 30px;
 }
 .command__title {
@@ -686,7 +708,6 @@ button {
 }
 .command__lists {
   margin-top: 16px;
-  margin-left: 32px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -704,7 +725,7 @@ button {
   fill: #ffffff;
 }
 .command__icon {
-  fill: #212121;
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
   margin: 12px 12px;
@@ -772,7 +793,7 @@ button {
   }
 }
 .footer__liink {
-  color: #ffffff;
+  color: #757575;
   margin-top: 9px;
   line-height: 1.71;
   width: 134px;
@@ -836,7 +857,6 @@ button {
 .footer__list {
   display: flex;
   gap: 10px;
-  width: 206px;
 }
 @media screen and (max-width: 1199px) {
   .footer__list {

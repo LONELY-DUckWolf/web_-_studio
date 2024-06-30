@@ -9,6 +9,7 @@
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+
     
       &::after {
         content: "";
@@ -64,6 +65,7 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
+
       &:hover {
           color: $logo-colour;
       }
@@ -81,7 +83,6 @@
 
   &__logo2 {
       color: $logo-colour;
-      margin-right: 80px;
       font-size: 26px;
       font-family: Raleway;
       font-weight: 700;
@@ -193,9 +194,9 @@
 
   &__item {
       display: flex;
-      gap: 53px;
-      margin-left: 93px;
+      gap: 51px;  
       line-height: 1.15;
+
   }
 
   &__link {
