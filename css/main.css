@@ -141,9 +141,6 @@ button {
 .header__web:hover {
   color: #2196f3;
 }
-.header__logo {
-  margin-right: 50px;
-}
 .header__box {
   display: flex;
   align-items: center;
@@ -157,6 +154,7 @@ button {
   letter-spacing: 0.78px;
 }
 .header__logo1 {
+  margin-right: 50px;
   color: #212121;
   margin-right: 80px;
   font-size: 26px;

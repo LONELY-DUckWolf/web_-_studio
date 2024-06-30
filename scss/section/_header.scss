@@ -2,6 +2,7 @@
   padding-top: 23px;
   padding-bottom: 24px;
 
+
   &__link {
       position: relative;
       left: 0;
@@ -69,11 +70,7 @@
       &:hover {
           color: $logo-colour;
       }
-  }
-
-  &__logo {
-      margin-right: 50px;
-  }
+    }
 
   &__box {
       display: flex;
@@ -90,6 +87,7 @@
   }
 
   &__logo1 {
+      margin-right: 50px;
       color: $text-color;
       margin-right: 80px;
       font-size: 26px;
