@@ -131,12 +131,24 @@
       letter-spacing: 0.28px;
   }
 
-  &__icon {
+  &__icons {
       fill: $text-color;
       transition-property: fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+      margin-right: 5px;
+
   }
+
+  &__icon {
+    fill: $text-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+    margin-right: 5px;
+    margin-top: 3px;
+
+}
 
   &__list {
       display: flex;

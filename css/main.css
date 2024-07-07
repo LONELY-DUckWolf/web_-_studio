@@ -195,11 +195,20 @@ button {
   font-weight: 500;
   letter-spacing: 0.28px;
 }
+.header__icons {
+  fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.41, 0.33, 0.46, 0.93);
+  margin-right: 5px;
+}
 .header__icon {
   fill: #212121;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.41, 0.33, 0.46, 0.93);
+  margin-right: 5px;
+  margin-top: 3px;
 }
 .header__list {
   display: flex;
