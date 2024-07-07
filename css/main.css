@@ -561,9 +561,21 @@ button {
 }
 
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .customers__text {
   color: #212121;
@@ -575,8 +587,9 @@ button {
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .customers__list {
     flex-wrap: wrap;
   }
@@ -594,7 +607,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .customers__item {
     max-width: 210px;
   }
@@ -624,11 +637,11 @@ button {
 }
 
 .command {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: rgb(245, 244, 250);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .command {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -644,8 +657,9 @@ button {
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .command__list {
     flex-wrap: wrap;
   }
@@ -658,9 +672,9 @@ button {
 .command__name {
   color: #212121;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .command__name {
     font-size: 24px;
   }
@@ -677,7 +691,7 @@ button {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .command__item {
     max-width: 450px;
   }
@@ -735,11 +749,23 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .footer__flex {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer__flex {
     flex-direction: column;
     gap: 60px;

@@ -1,8 +1,20 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: $bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bg-color;
 
+  & {
+    @media screen and (min-width: 768px) {
+
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
   &__text {
     color: $text-color;
     text-align: center;
@@ -14,8 +26,9 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       flex-wrap: wrap;
     }
 
@@ -31,7 +44,7 @@
     justify-content: center;
     align-items: center;    
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       max-width: 210px;
     }
     @media screen and (min-width: 768px) {
