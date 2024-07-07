@@ -48,11 +48,6 @@ align-items: center; */
   
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
 
 .no-scroll {
   overflow: hidden;
@@ -204,5 +199,147 @@ align-items: center; */
   border-color: transparent;
   background-color: #188ce8;
 }
+
+}
+
+
+
+
+
+.mobile {
+  
+
+  &__window {
+    border-radius: 4px;
+    background: #fff;
+    flex-shrink: 0;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    padding-top: 10px;
+    width: 480px;
+    height: auto;
+  }
+
+  
+.backdrop.is-hidden &__window {
+  transform: translate(0);
+  transform: scale(0);
+  
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+  &__button {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    margin-left: 385px;
+    margin-right: 15px;
+  
+  }
+
+  &__icon {
+    width: 18.67px;
+    height: 18.67px;
+
+    &:hover {
+      fill: $logo-colour;
+    }
+  }
+
+  &__flist {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: $text-color;
+    margin-bottom: 151px;
+    
+
+  }
+  
+  
+  &__slist {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: $text-color;
+    
+
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    width: 139px;
+    height: 48px;
+
+    
+  }
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+
+    &:hover {
+      color: $logo-colour;
+    }
+  }
+
+  &__info {
+    margin-bottom: 32px;
+  }
+
+  &__phone {
+    color: $icon-color;
+    width: 296px;
+    height: 40px;
+    
+
+    &:hover {
+      color: $logo-colour;
+    }
+  }
+
+  &__email {
+    color: $icon-color;
+    width: 231px;
+    height: 28px;
+
+    &:hover {
+      color: $logo-colour;
+    }
+  }
+
+
+  &__sots {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__cites {
+    margin-right: 8px;
+  }
+
+  &__texts {
+    color: $logo-colour;
+
+    &::before {
+      content: ' | ';
+      margin-right: 8px;
+    }
+  }
+
+  &__textss {
+    color: $logo-colour;
+  }
 
 }

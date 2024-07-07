@@ -54,21 +54,11 @@
                         </a>
                     </li>
                 </ul>
-                <button class="headermobile__hamburger" type="button">
+                <button class="headermobile__hamburger" data-mobile-open type="button" data-mobile-open>
                     <svg class="header-icon" width="30" height="30">
                         <use href="./image/symbol-defs.svg#icon-burgeriii"></use>
                     </svg>
                 </button>
-            </div>
-            <div class="headermobile__menu is-hidden" data-modal>
-                <button class="headermobile__close" type="button" data-modal-close>Close</button>
-                <ul class="headermobile__list">
-                    <li class="headermobile__item"><a class="headermobile__link" href="./index.html">Студія</a></li>
-                    <li class="headermobile__item"><a class="headermobile__link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="headermobile__item"><a class="headermobile__link" href="./contact.html">Контакти</a></li>
-                    <li class="headermobile__item"><a class="headermobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="headermobile__item"><a class="headermobile__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
             </div>
         </header>
         
@@ -81,7 +71,7 @@
 
                     <!-- section hero -->
                     <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="hero__button" data-modal-open type="mit" data-modal-open>
+                    <button class="hero__button" data-modal-open type="button" data-modal-open>
                         Замовити послугу
                     </button>
                 </div>
@@ -487,7 +477,75 @@
                 <button class="modal__button" type="button" data-modal-close>Відправити</button>
             </div>
         </div>
+
+        <div class="backdrop is-hidden" data-mobile>
+            <div class="mobile__window">
+                <button class="mobile__button" type="button" data-mobile-close>
+                    <svg class="mobile__icon" width="18" height="18">
+                        <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1">
+                        </use>
+                    </svg>
+                </button>
+                
+                <ul class="mobile__flist">
+                    <li class="mobile__item">
+                        <a href="./index.html" class="mobile__link">
+                            <b class="mobile__text">Студіо</b>
+                        </a>
+                    </li>
+                    <li class="mobile__item">
+                        <a href="./portfolio.html" class="mobile__link">
+                            <b class="mobile__text">Портфоліо</b>
+                        </a>
+                    </li>
+                    <li class="mobile__item">
+                        <a href="./contact.html" class="mobile__link">
+                            <b class="mobile__text">Контакти</b>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="mobile__slist">
+                    <li class="mobile__contact">
+                        <a class="mobile__link" href="tel:+380961111111">
+                            <p class="mobile__info"><b class="mobile__phone">+38 096 111 11 11</b></p>
+                        </a>
+                    </li>
+                   <li class="mobile__contact">
+                        <a class="mobile__link" href="mailto:info@devstudio.com">
+                            <p class="mobile__info"><b class="mobile__email">info@devstudio.com</b></p>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                <ul class="mobile__sots">
+                    <li class="mobile__cites">
+                        <a href="#" class="mobile__link">
+                            <p class="mobile__textss">instagram</p>
+                        </a>
+                    </li>
+                    <li class="mobile__cites">
+                        <a href="#" class="mobile__link">
+                            <p class="mobile__texts">Twitter</p>
+                        </a>
+                    </li>
+                    <li class="mobile__cites">
+                        <a href="#" class="mobile__link">
+                            <p class="mobile__texts">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="mobile__cites">
+                        <a href="#" class="mobile__link">
+                            <p class="mobile__texts">LinkedIn</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile.js"></script>
     </body>
 
 </html>
