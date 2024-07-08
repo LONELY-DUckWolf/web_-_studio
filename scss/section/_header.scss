@@ -17,7 +17,7 @@
         display: block;
         position: absolute;
         border-radius: 50px;
-        width: 100%;
+        max-width: 1200px;
         height: 4px;
         opacity: 0;
         margin-top: 28px;
@@ -89,11 +89,23 @@
   &__logo1 {
       margin-right: 50px;
       color: $text-color;
-      margin-right: 80px;
+      margin-right: auto;
       font-size: 26px;
       font-family: Raleway;
       font-weight: 700;
       letter-spacing: 0.78px;
+
+      & {
+        @media screen and (min-width: 768px) {
+  
+        
+          margin-right: auto;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 230px;
+        }
+      }
   }
 
   &__navigation {

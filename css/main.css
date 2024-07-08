@@ -96,7 +96,7 @@ button {
   display: block;
   position: absolute;
   border-radius: 50px;
-  width: 100%;
+  max-width: 1200px;
   height: 4px;
   opacity: 0;
   margin-top: 28px;
@@ -156,11 +156,21 @@ button {
 .header__logo1 {
   margin-right: 50px;
   color: #212121;
-  margin-right: 80px;
+  margin-right: auto;
   font-size: 26px;
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.78px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo1 {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo1 {
+    margin-right: 230px;
+  }
 }
 .header__navigation {
   display: flex;
@@ -436,9 +446,21 @@ button {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .features__list {
   display: flex;
@@ -685,12 +707,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .command__name {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 1200px) {
   .command__name {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 .command__item {
@@ -803,13 +825,14 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer__boxst {
-    display: flex;
-    gap: 165px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__boxst {
-    gap: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .footer__address {
@@ -817,7 +840,6 @@ button {
   margin-top: 20px;
   line-height: 1.71;
   font-style: normal;
-  width: 207px;
 }
 @media screen and (max-width: 1199px) {
   .footer__address {
@@ -970,6 +992,15 @@ button {
     margin-right: auto;
     max-width: 450px;
   }
+}
+.footer__input::-moz-placeholder {
+  color: #ffffff;
+}
+.footer__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.footer__input::placeholder {
+  color: #ffffff;
 }
 .footer__input:focus {
   outline: none;
