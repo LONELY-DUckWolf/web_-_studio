@@ -3,6 +3,7 @@
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+
   
   & {
     @media screen and (min-width: 768px) {
@@ -46,14 +47,11 @@
 
   &__boxst {
     @media screen and (min-width: 768px) {
-
-      padding-top: 94px;
-      padding-bottom: 94px;
+      display: flex;
+      gap: 165px; 
     }
-
     @media screen and (min-width: 1200px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      gap: 70px;
     }
   }
 
@@ -63,6 +61,7 @@
     @extend %text;
     line-height: 1.71;
     font-style: normal;
+    width: 207px;
 
     @media screen and (max-width: 1199px) {
       margin-left: auto;
@@ -207,10 +206,6 @@
       margin-left: auto;
       margin-right: auto;
       max-width: 450px;
-    }
-
-    &::placeholder {
-      color: $bg-color;
     }
   }
   &__input:focus {
