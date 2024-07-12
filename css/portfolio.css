@@ -16,6 +16,7 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -74,8 +75,22 @@ button {
 }
 
 .header {
-  padding-top: 23px;
+  padding-top: 24px;
   padding-bottom: 24px;
+  padding-right: auto;
+  padding-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 .header__link {
   position: relative;

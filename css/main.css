@@ -16,6 +16,7 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -47,7 +48,7 @@ button {
   letter-spacing: 0.48px;
 }
 
-.footer__button, .workerss__text {
+.footer__button, .work__text {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.54px;
@@ -59,7 +60,7 @@ button {
   letter-spacing: 0.78px;
 }
 
-.command__name, .customers__text, .workerss__title {
+.command__name, .customers__text {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
@@ -80,8 +81,22 @@ button {
 }
 
 .header {
-  padding-top: 23px;
+  padding-top: 24px;
   padding-bottom: 24px;
+  padding-right: auto;
+  padding-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-right: auto;
+    padding-left: auto;
+  }
 }
 .header__link {
   position: relative;
@@ -378,6 +393,36 @@ button {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/phone/heroimg@phone-1x.webp);
+  }
+}
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/phone/heroimg@phone-2x.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/heroimg@tablet-1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/heroimg@tablet-2x.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/desktop/heroimg@desktop-1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/desktop/heroimg@desktop-2x.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
@@ -501,41 +546,33 @@ button {
   }
 }
 
-.workerss {
-  font-weight: 700;
-  line-height: 0.6;
-  padding: 94px 0 94px;
+.work {
+  padding-bottom: 94px;
+  background-color: rgb(245, 244, 250);
 }
 @media screen and (max-width: 1199px) {
-  .workerss {
+  .work {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .workerss {
-    display: none;
-  }
+.work__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
-.workerss__title {
+.work__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  line-height: 1.33;
   margin-bottom: 50px;
+  font-size: 30px;
 }
-.workerss__list {
-  display: flex;
-  justify-content: space-between;
-}
-.workerss__item {
+.work__item {
   position: relative;
 }
-.workerss__position {
+.work__position {
   display: flex;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   justify-content: center;
   align-items: center;
   width: 370px;
@@ -543,30 +580,10 @@ button {
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
   left: 0;
-  transition-duration: 250ms;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(101%);
 }
-.workerss__text {
+.work__text {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
-  text-transform: uppercase;
-}
-.workerss__link {
-  overflow: hidden;
-  height: 294px;
-  position: relative;
-  display: block;
-}
-.workerss__link:hover .workerss__position {
-  transform: translate(0%);
-}
-.workerss__link:focus .workerss__position {
-  transform: translate(0%);
 }
 
 .customers {
