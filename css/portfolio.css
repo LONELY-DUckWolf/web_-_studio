@@ -485,6 +485,7 @@ body {
   width: 400px;
   height: 400px;
   gap: 50px;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .sponcer__item {
@@ -507,6 +508,22 @@ body {
 .sponcer__item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   gap: 4px;
+}
+.sponcer__photo {
+  width: 354px;
+  height: 294px;
+}
+@media screen and (max-width: 767px) {
+  .sponcer__photo {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sponcer__photo {
+    width: 370px;
+    height: 294px;
+  }
 }
 .sponcer__list {
   display: flex;
